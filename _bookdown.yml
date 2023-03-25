@@ -1,0 +1,5 @@
+book_filename: "open_music_europe_demo"
+language:
+  ui:
+    chapter_name: "Chapter "
+delete_merged_file: true
