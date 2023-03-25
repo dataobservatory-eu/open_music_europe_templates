@@ -1,2 +1,1 @@
-# openmuse_disseminatino_communication
-Open Music Europe dissemination and communications assets
+## Open Music Europe dissemination and communications assets
