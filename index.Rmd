@@ -1,6 +1,6 @@
 --- 
-title: "Open Music Europe Template"
-author: "Yihui Xie"
+title: "Report on the European Music Economy"
+author: ""
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: 
@@ -18,25 +18,48 @@ description: "This is a minimal example of using the bookdown package to write u
 
 # Prerequisites
 
-This is a _sample_ book written in **Markdown** and the Word document template provided by **Synyo**. We simply loaded the template into the  [bookdown](https://github.com/rstudio/bookdown). [minimal example](https://github.com/rstudio/bookdown-demo) after some errors (removing Microsoft-only fonts.)
+The _Feasibility study for the establishment of a European Music Observatory_ (in short: EMO Feasibility Study)^[Feasibility study for the establishment of a European Music Observatory [@emo_feasibility_study_2020].] has identified 13 data gaps, and 4 existing but publicly not available data sources.
 
-You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
+The Digital Music Observatory has experience with collecting and internationally harmonizing data in 12/13 identified data gaps, with the exceptions of _The impact of the not-for-profit sector on the overall economy of the music sector_, and already has even pan-European and shared data in some areas. Regarding the 4 identified existing, not available data sources, the Digital Music Observatory maps the metadata of all of these. It can close half of the of the data gaps pending approval from music stakeholder (data owners), and can replicate the other data.
 
-The **bookdown** package can be installed from CRAN or Github:
+I. [Task list](#wp-economy)
+&nbsp;
 
-```{r eval=FALSE}
-install.packages("bookdown")
-# or the development version
-# devtools::install_github("rstudio/bookdown")
+1. [Methodology Issues](#methodology-music-economy)
+
+
+II. [Filling the Data Gaps](#obj-economy-data-gaps)
+&nbsp;
+1. [Employment](#obj-economy-employment); 2. [Value of EU's music sector](#obj-economy-value-sector); 3. [Structure of the market](#obj-economy-market-sector); 4. [The impact of the not-forprofit sector on the overall economy of the music sector](#obj-economy-non-profit); 5. [Neighbouring rights](#obj-economy-neighboring); 6. [Music publishing](#obj-economy-music-publishing); 7. [Independent music companies](#obj-economy-independent-music); 8. [Live music](#obj-economy-live-music); 9. [Export](#obj-economy-music-export); 10. [Music retail](#obj-economy-background-music) or in-store public performance; 11. [Financing of the music sector](#obj-economy-financing); 12. [Live music regulation](#obj-live-music-regulation); 13. [Copyright regulations and evolution of copyright regimes](#obj-copyright-regulation).
+
+Furthermore, the _EMO Feasiblity Study_ mentions existing data sources that are collected by various organizations, such as GESAC, CISAC and IFPI. 
+
+II. [The Economy of Music Pillar of the Digital Music Observatory](#dmo-economy-pillar)
+1. [From CEEMID to the Digital Music Observatory](#obj-diversity-ceemid-dmo) _This can be used in excellence / Objectives_ and _WP Implementation_.
+2. [Cultural and Music Policy Relevance](#obj-diversity-policy) _This can be used as state-of the art in Objectives._
+3. [Open Collaboration, Open Policy Analysis, and Open Data](#obj-diversity-OPA)
+&nbsp;  _This overlaps with our general WP Implementation_.
+
+III. [References](#obj-diversity-references)
+
+The goals of the Diversity and Circulation Pillar greatly overlap with some aspects of the Economy of Music Pillar.
+
+Cultural diversity policy goals, which want to ensure that the music scene of a country, region or city gets proper exposure on the local media and stages, or less popular genres still find a way to their audiences, go hand in hand with some competition policy and consumer protection targets, and they also align well with the objectives of intellectual property and copyright policies.  Because almost all income of artists is connected to the use of music, a lack of diversity, and less opportunities for small-language repertoires, classical or jazz music, also lead to inadequate income connected to their composers, performers and a devaluation of their copyrights and neighboring rights.  An excessive concentration of volume of use, and therefore revenues/market share for certain nations, or large publishers/labels is conflicting with competition policy goals.
+
+The 8 years of research and policy use history of the Digital Music Observatory (formerly CEEMID) is connected both to competition law-based cases and cultural policy use cases, using the same data, and an overlapping methodology. 
+
+```{r valuechainfigure-wp, echo=FALSE}
+knitr::include_graphics(here::here("plots", "Music_value_chain.png"))
 ```
 
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`.
+In the 21st century, about 60% of the recorded music sales are made by streaming and user-uploaded content platforms where it is mainly not human curators but AI algorithms that match the vast supply of content to users.  These AI algorithms use machine learning from the available biographical, musicological, natural language processed lyrics and review information, the artists music history and the user interaction history, user demographics, and other complex, interrelated information.  Our experience shows that a strong presence on global streaming and UUG platform requires a very sophisticated data infrastructure and data knowledge that is not present in smaller, independent music businesses, and not even in small-country national organizations. 
 
-To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.name/tinytex/>.
+The data of the Digital Music Observatory is used – outside the scope of this proposal – in trustworthy AI research when we try to assign blame for the less-than-optimal outcome for small business and small country repertoires for copyright data and metadata problems.  These problems related to a larger problem that we work in both the _Economy of Music Pillar_^[Observing, Monitoring and Analysing the Economy of Music in Europe with the Digital Music Observatory [@DMO-music-economy-pillar].] and the the _Diversity and Circulation Pillar_^[Measuring and Monitoring the Diversity Circulation of European Music with Open Source Technology and Data Sharing Witin the Digital Music Observatory [@DMO-music-diversity-pillar].]. Indirectly, because copyright data management/metadata management problems are among the causes of _Music export_, _Structure of the market_, 
+_Value of EU's music sector_, _Employment_, _Independent music_, _Neighbouring rights_ problems and data gaps of the _Economy of Music Pillar_, not only that of the Diversity & Circulation problems. Indirectly, because researching these problems requires the same data sources, the same data processing about music present in broadcast, retransmission, streaming and other non-mechanical channels of distribution.
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
+In other words, the _Economy of Music Pillar_ relies on very similar data like the _Diversity and Circulation Pillar_, but it uses the data in different analytical models. As a joint research project of IViR, Reprex, and other partners found, "… _costs_ can also be understood in a broader sense. Instead of confining the analysis to monetary aspects, it is important to consider broader cultural repercussions, in particular the impact of standardised data formats and comprehensive copyright data systems on cultural diversity, recognition and attribution (in the sense of the moral rights enjoying protection under international copyright law and the national copyright systems of EU Member States) and the visibility and availability of the full spectrum of European creative works."^[Ensuring the Visibility and Accessibility of European Creative Content on the World Market - The Need for Copyright Data Improvement in the Light of New Technologies and the Opportunity Arising from Article 17 of the CDSM Directive [@ssrn3785272].].
+
+Last, but not least, the [Towards a competitive, fair and sustainable European music ecosystem](https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-cl2-2022-heritage-01-05)^[Research and innovation on cultural heritage and CCIs - 2022 (HORIZON-CL2-2022-HERITAGE-01)] grant call stresses out that "proposals should further research on the economy of the streaming models". While the _EMO _Feasibility Study_ places the topic of in the _Music Innovation Pillar_^[See Observing and Promoting Innovation in the Music Ecosystem and Future Trends in Music with Open Data and Open Collaboration [@DMO-music-innovation-pillar]], we deal with this problem in our [WP Music Economy](#obj-economy-data-gaps) and [WP Diversity & Circulation]()
+
+Please find the authoritative copy of this document (or later versions) on [Zenodo](https://zenodo.org/record/6435322#.YlMVfMhBzIU).
+Subjects: [Music industry](https://id.loc.gov/authorities/subjects/sh85088944.html); [Valuation](https://id.loc.gov/authorities/subjects/sh85141927.html); [Copyright](https://id.loc.gov/authorities/subjects/sh85032446.html).
