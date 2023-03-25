@@ -8,7 +8,6 @@ You can leave comments for improvements requests to the Synyo team in the [issue
 
 You can leave improvement requests, like adding a title, in [issues ](https://github.com/dataobservatory-eu/open_music_europe_templates/issues/1)
 
-
 `document/Preliminary_Open_Music_Europe_Template.docx`: Preliminary template suggested by Synyo. Do not use yet this document until corrected. It has too many Microsoft Word specific formatting elements and it cannot be used in other platforms. It will be simplified to work on all platforms and word processors. See [issue 2](https://github.com/dataobservatory-eu/open_music_europe_templates/issues/2)
 
 ## Presentation templates
